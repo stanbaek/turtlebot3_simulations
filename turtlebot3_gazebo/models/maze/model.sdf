@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="square_path">
+    <static>true</static>
+    <link name="walls_link">
+      <!-- Outer Walls -->
+      <!-- Bottom Wall -->
+      <collision name="bottom_wall_collision">
+        <pose>1.44 0 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.88 0.017 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="bottom_wall_visual">
+        <pose>1.44 0 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>2.88 0.017 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+        </material>
+      </visual>
+
+      <!-- Top Wall -->
+      <collision name="top_wall_collision">
+        <pose>0.9 1.08 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8 0.017 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="top_wall_visual">
+        <pose>0.9 1.08 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8 0.017 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+        </material>
+      </visual>
+
+      <!-- Left Wall -->
+      <collision name="left_wall_collision">
+        <pose>0 0.54 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017 1.08 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="left_wall_visual">
+        <pose>0 0.54 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017 1.08 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+        </material>
+      </visual>
+
+      <!-- Right Wall -->
+      <collision name="right_wall_collision">
+        <pose>2.88 0.9 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017 1.8 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="right_wall_visual">
+        <pose>2.88 0.9 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017 1.8 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+        </material>
+      </visual>
+
+      <!-- Inner Walls -->
+      <!-- Bottom Wall -->
+      <collision name="inner_bottom_wall_collision">
+        <pose>1.44 0.54 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8 0.017 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="inner_bottom_wall_visual">
+        <pose>1.44 0.54 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.8 0.017 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+        </material>
+      </visual>
+
+      <!-- Top Wall -->
+      <collision name="inner_top_wall_collision">
+        <pose>2.34 1.8 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.08 0.017 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="inner_top_wall_visual">
+        <pose>2.34 1.8 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.08 0.017 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+        </material>
+      </visual>
+
+      <!-- Left Wall -->
+      <collision name="inner_left_wall_collision">
+        <pose>1.8 1.44 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017 0.72 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="inner_left_wall_visual">
+        <pose>1.8 1.44 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017 0.72 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+        </material>
+      </visual>
+
+      <!-- Right Wall -->
+      <collision name="inner_right_wall_collision">
+        <pose>2.34 0.9 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017 0.72 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="inner_right_wall_visual">
+        <pose>2.34 0.9 0.1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017 0.72 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
